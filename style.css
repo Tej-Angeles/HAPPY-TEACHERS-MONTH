@@ -292,3 +292,30 @@ footer {
     font-size: 2rem;
   }
 }
+
+/* floating hearts */
+.heart-bg {
+  position: absolute;
+  animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+/* button hover */
+.btn-primary {
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.btn-primary:hover {
+  transform: translateY(-3px);
+}
+
+/* letter card slide */
+.letter-card {
+  transform: translateY(30px) scale(.95);
+  transition: transform .4s ease;
+}
+.modal-overlay.active .letter-card {
+  transform: none;
+}
